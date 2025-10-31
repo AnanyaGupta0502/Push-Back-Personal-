@@ -1,0 +1,38 @@
+void skill_auton() {
+    chassis.moveToPoint( -62.784,12.105, 300);
+    chassis.turnToHeading(90, 300);
+    chassis.moveToPoint(-62.784, 46.365, 300);
+    chassis.turnToHeading(270, 300);
+    chassis.moveToPoint(-27.531, 46.365, 300);
+    //Intake 
+    chassis.turnToHeading(170,  3000);
+    chassis.moveToPoint(-23.559,  24.518, 3000);
+    //Intake 
+    chassis.turnToHeading(-170, 300);
+    chassis.moveToPoint(-32.496,  45.868, 300);
+    //Intake
+    chassis.turnToHeading(125, 300);
+    chassis.moveToPoint(-27.531,  46.365, 300);
+    //Intake
+    chassis.turnToHeading(67,300);
+    chassis.moveToPoint(65.123,  45.133, 300);
+    //Intake
+    chassis.turnToHeading(200, 300);
+    chassis.moveToPoint(27.886,  46.449, 300);
+    chassis.turnToHeading(270, 300);
+    //intake
+    chassis.turnToHeading(350, 300);
+    chassis.moveToPoint(23.611, -23.148, 300);
+    //Intake
+    chassis.turnToHeading(270, 300);
+    chassis.moveToPoint(-20.646, -23.771,300);
+    //Intake
+    chassis.turnToHeading(240, 300);
+    chassis.moveToPoint(-64.77,  -45.739, 300);
+    //Intake
+    chassis.turnToHeading(90, 300);
+    chassis.moveToPoint(-25.793, -47.974, 300);
+    //Intake 
+    chassis.turnToHeading(320, 300);
+    chassis.moveToPoint(-66.507,  -0.059, 300);
+}
