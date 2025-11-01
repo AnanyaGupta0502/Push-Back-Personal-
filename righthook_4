@@ -1,0 +1,49 @@
+void righthook_4() {
+    //start
+    chassis.setPose(48.2, 17.294, 270);
+    chassis.moveToPoint(48.2, 46.778, 300);
+    chassis.turnToHeading(90, 300);
+    chassis.moveToPoint(62.942, 46.778, 300);
+    //intake matchloader balls
+    intakestage1.move_velocity(600);
+    chassis.moveToPoint(48.2, 46.778, 300, {.forwards = false}); //moving backwards to that point 
+    chassis.turnToHeading(270, 300);
+    chassis.moveToPoint(28.141, 47.02, 300);
+    //!Intake long goal
+    intakestage3.move_velocity(-600);
+    //Do we want to go back a lil bit first?
+    //chassis.moveToPoint(35.633,46.779, 300, {.forwards = false}); code to move back
+    chassis.turnToHeading(180,300);
+    chassis.moveToPoint(28.141,36.628,300);
+    chassis.turnToHeading(270,300);
+    //move descore arm down 
+    //check if the delay is needed and if the right pneumatic is used with the right boolean 
+    snacky.set_value(false);
+    delay(250); // Allow time for arm to lower?
+    chassis.moveToPoint(7.357, 36.628, 300);
+
+
+    
+    //chassis.moveToPoint(48.441, 47.02, 3000);
+    //delay(1000);
+    //chassis.turnToHeading(90, 750);
+    //littlewill.set_value(false);
+    //intakestage1.move_velocity(600);
+    //intakestage3.move_velocity(600);
+    // chassis.moveToPoint(67.768, 47.311, 800);
+    // intakestage1.move_velocity(600);
+    // intakestage3.move_velocity(200);
+    // delay(500);
+    // chassis.moveToPoint(22.447, 47.311, 800, {.forwards = false});
+    // intakestage1.move_velocity(600);
+    // intakestage3.move_velocity(-600);
+    // delay(1500);
+    // chassis.moveToPoint(26.447, 47.311, 800);   
+    // chassis.turnToHeading(200, 750);
+    // chassis.moveToPoint(22.47, 21.541, 1000, {.maxSpeed = 70});
+    // chassis.moveToPoint(5.563, 6.434, 1000, {.maxSpeed = 70});
+    // intakestage1.move_velocity(-600);
+    // intakestage3.move_velocity(600);
+    // delay(1000);
+    // chassis.moveToPoint(24.002, -21.114, 1500, {.forwards = false, .maxSpeed = 70});
+}
