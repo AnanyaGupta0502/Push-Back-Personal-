@@ -1,0 +1,51 @@
+chassis.setPose( -62.784,12.105, 0);
+    //chassis.turnToHeading(90, 300);
+    chassis.moveToPoint(-62.784, 46.365, 3000);
+    chassis.turnToHeading(270,300);
+    //Intake matchloader balls
+    //intakestage1.move_velocity(600);
+    chassis.turnToHeading(90, 300);
+    chassis.moveToPoint(-27.531, 46.365, 3000);
+    //Intake long goal
+    //intakestage3.move_velocity(600);
+    chassis.turnToHeading(130,  300);
+    chassis.moveToPoint(-23.559,  24.518, 3000);
+    //Intake ground balls/matchloader balls
+    chassis.moveToPoint(-12.615,  13.23, 3000);
+    //Intake upper middle goal?
+    chassis.turnToHeading(67, 300);
+    chassis.moveToPoint(22.866,  23.277, 3000);
+    //Intake ground balls
+    chassis.moveToPoint(61.922,  46.193, 3000);
+    //Intake matchloader balls 
+    chassis.turnToHeading(270, 300);
+    chassis.moveToPoint(28.221,  46.685, 3000);
+    //intake long goal balls
+    //intakestage3.move_velocity(600);
+    chassis.turnToHeading(182, 300);
+    chassis.moveToPoint(23.793, -23.424, 3000);
+    //Intake
+    //intakestage1.move_velocity(600);
+    chassis.turnToHeading(115, 300);
+    chassis.moveToPoint(61.43, -47.039,3000);
+    chassis.turnToHeading(90, 300);
+    //Intake
+    //intakestage1.move_velocity(600);
+    chassis.turnToHeading(270, 300);
+    chassis.moveToPoint(30.189,  -47.285, 3000);
+    //Intake mid goal
+    chassis.turnToHeading(290, 300);
+    chassis.moveToPoint(-24.177, -23.67, 3000);
+    //Intake 
+    //intakestage1.move_velocity(600);
+    chassis.turnToHeading(240, 300);
+    chassis.moveToPoint(-62.06,  -47.285, 3000);
+    chassis.turnToHeading(270, 300);
+     //Intake matchloader balls
+    //intakestage1.move_velocity(600);
+     chassis.turnToHeading(90, 300);
+     chassis.turnToPoint(-28.358,-47.039,3000);
+     //Intake Long goal balls
+     //intakestage3.move_velocity(600);
+     chassis.turnToHeading(320,300);
+     chassis.moveToPoint(-66.242, -2.022, 3000);
