@@ -1,0 +1,106 @@
+    // === 0. INITIAL POSE ===
+    chassis.setPose(-62.784, 12.105, 0);  // Red left start
+
+    // === INTAKE MOTORS (define globally) ===
+    // pros::Motor intake1(1), intake2(2), intake3(3);
+
+    // -------------------------------------------------
+    // 1. MATCH LOAD #1 (Left side)
+    // -------------------------------------------------
+    chassis.moveToPoint(-62.784, 46.365, 1800, true);
+    chassis.turnToHeading(270, 700, true);
+    intake1.move_velocity(600);   // Start intake
+    pros::delay(800);
+    intake1.brake();
+
+    // -------------------------------------------------
+    // 2. LONG GOAL #1 (Center left)
+    // -------------------------------------------------
+    chassis.turnToHeading(90, 700, true);
+    chassis.moveToPoint(-27.531, 46.365, 2200, true);
+    intake3.move_velocity(600);
+    pros::delay(1000);
+    intake3.brake();
+
+    // -------------------------------------------------
+    // 3. GROUND PILE + MATCH LOAD #2
+    // -------------------------------------------------
+    chassis.turnToHeading(130, 700, true);
+    chassis.moveToPoint(-23.559, 24.518, 2000, true);
+    intake1.move_velocity(600);
+    pros::delay(1200);
+    intake1.brake();
+
+    chassis.moveToPoint(-12.615, 13.23, 1800, true);  // Ground balls
+    pros::delay(800);
+
+    // -------------------------------------------------
+    // 4. CROSS FIELD → RIGHT SIDE
+    // -------------------------------------------------
+    chassis.turnToHeading(67, 700, true);
+    chassis.moveToPoint(22.866, 23.277, 2800, true);   // Long move
+    intake1.move_velocity(600);
+    pros::delay(1000);
+
+    chassis.moveToPoint(61.922, 46.193, 2200, true);   // Match load #3
+    pros::delay(800);
+    intake1.brake();
+
+    // -------------------------------------------------
+    // 5. LONG GOAL #2 (Right)
+    // -------------------------------------------------
+    chassis.turnToHeading(270, 700, true);
+    chassis.moveToPoint(28.221, 46.685, 2000, true);
+    intake3.move_velocity(600);
+    pros::delay(1000);
+    intake3.brake();
+
+    // -------------------------------------------------
+    // 6. BOTTOM HALF – LEFT SIDE
+    // -------------------------------------------------
+    chassis.turnToHeading(182, 700, true);
+    chassis.moveToPoint(23.793, -23.424, 2500, true);
+    intake1.move_velocity(600);
+    pros::delay(900);
+
+    chassis.turnToHeading(115, 700, true);
+    chassis.moveToPoint(61.43, -47.039, 2200, true);
+    pros::delay(800);
+
+    chassis.turnToHeading(90, 700, true);
+    pros::delay(600);
+
+    chassis.turnToHeading(270, 700, true);
+    chassis.moveToPoint(30.189, -47.285, 2000, true);
+    pros::delay(800);
+
+    // -------------------------------------------------
+    // 7. FINAL MID GOAL + MATCH LOAD #4
+    // -------------------------------------------------
+    chassis.turnToHeading(290, 700, true);
+    chassis.moveToPoint(-24.177, -23.67, 2200, true);
+    intake1.move_velocity(600);
+    pros::delay(900);
+
+    chassis.turnToHeading(240, 700, true);
+    chassis.moveToPoint(-62.06, -47.285, 2200, true);
+    pros::delay(800);
+
+    chassis.turnToHeading(270, 700, true);
+    pros::delay(600);
+
+    chassis.turnToHeading(90, 700, true);
+    chassis.turnToPoint(-28.358, -47.039, 1800, true);  // Face long goal
+    intake3.move_velocity(600);
+    pros::delay(1200);
+    intake3.brake();
+
+    // -------------------------------------------------
+    // 8. FINAL CROSS + DUMP (optional catapult)
+    // -------------------------------------------------
+    chassis.turnToHeading(320, 700, true);
+    chassis.moveToPoint(-66.242, -2.022, 2500, true);
+
+    // OPTIONAL: Fire catapult or outtake all
+    // catapult.fire();
+    // intake1.move_velocity(-600); pros::delay(1500); intake1.brake();
