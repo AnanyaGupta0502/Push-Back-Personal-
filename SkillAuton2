@@ -1,0 +1,70 @@
+void skills_1() {
+    chassis.setPose( -62.784,12.105, 0);
+    //chassis.turnToHeading(90, 300);
+    chassis.moveToPoint(-62.784, 46.365, 3000); 
+    chassis.waitUntilDone();
+    chassis.turnToHeading(270,300);    
+    //Intake matchloader balls
+    matchloader();
+    chassis.turnToHeading(90, 300);
+    chassis.moveToPoint(-27.531, 46.365, 3000);
+    chassis.waitUntilDone();
+    //Intake long goal
+    longgoal();
+    chassis.turnToHeading(130,  300);
+    chassis.moveToPoint(-23.559,  24.518, 3000);
+    chassis.waitUntilDone();
+    //Intake ground balls/matchloader balls
+    matchloader();
+    chassis.moveToPoint(-12.615,  13.23, 3000);
+    chassis.waitUntilDone();
+    //Intake upper middle goal?
+    upper_mid_goal();
+    chassis.turnToHeading(67, 300);
+    chassis.moveToPoint(22.866,  23.277, 3000);
+    chassis.waitUntilDone();
+    //Intake ground balls
+    matchloader();
+    chassis.moveToPoint(61.922,  46.193, 3000);
+    //Intake matchloader balls 
+    chassis.turnToHeading(270, 300);
+    chassis.moveToPoint(28.221,  46.685, 3000);
+    chassis.waitUntilDone();
+    //intake long goal balls
+    longgoal();
+    chassis.turnToHeading(182, 300);
+    chassis.moveToPoint(23.793, -23.424, 3000);
+    chassis.waitUntilDone();
+    //Intake
+    matchloader();
+    chassis.turnToHeading(115, 300);
+    chassis.moveToPoint(61.43, -47.039,3000);
+    chassis.waitUntilDone();
+    chassis.turnToHeading(90, 300);
+    //Intake
+    matchloader();
+    chassis.turnToHeading(270, 300);
+    chassis.moveToPoint(30.189,  -47.285, 3000);
+    chassis.waitUntilDone();
+    //Intake mid goal
+    longgoal();
+    chassis.turnToHeading(290, 300);
+    chassis.moveToPoint(-24.177, -23.67, 3000);
+    chassis.waitUntilDone();
+    //Intake 
+    matchloader();
+    chassis.turnToHeading(240, 300);
+    chassis.moveToPoint(-62.06,  -47.285, 3000);
+    chassis.waitUntilDone();
+    chassis.turnToHeading(270, 300);
+    //Intake matchloader balls
+    matchloader();
+    chassis.turnToHeading(90, 300);
+    chassis.turnToPoint(-28.358,-47.039,3000);
+    chassis.waitUntilDone();
+    //Intake Long goal balls
+    longgoal(); 
+    chassis.turnToHeading(320,300);
+    chassis.moveToPoint(-66.242, -2.022, 3000);
+    chassis.waitUntilDone();
+}
