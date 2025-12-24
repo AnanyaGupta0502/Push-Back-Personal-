@@ -1,0 +1,13 @@
+void other_auton_idea() 
+{   
+    chassis.setPose( -62.784,12.105, 0);
+    chassis.moveToPoint(-66.784, 44.365, 3000, {.maxSpeed =70}); 
+    chassis.turnToHeading(270,300);  
+    chassis.moveToPoint(-35.531, 44.365, 2000, {.forwards=false,.maxSpeed = 50});
+    delay(1000);
+    chassis.moveToPoint(-48.139,44.365,3000, {.forwards=false,.maxSpeed = 50});
+
+
+
+    
+    
